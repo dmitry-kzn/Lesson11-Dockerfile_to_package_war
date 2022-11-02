@@ -17,3 +17,4 @@ EXPOSE 8080
 #WORKDIR /usr/src/mymaven/
 COPY *.war /usr/local/tomcat/webapps/
 #COPY /target/*.war /usr/local/tomcat/webapps/
+CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
